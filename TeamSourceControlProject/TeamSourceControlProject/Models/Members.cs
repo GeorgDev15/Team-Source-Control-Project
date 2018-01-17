@@ -10,6 +10,7 @@ namespace TeamSourceControlProject.Models
     /// </summary>
     public class Members
     {
+        
         public int MemberID { get; set; }
 
         public string FirstName { get; set; }
