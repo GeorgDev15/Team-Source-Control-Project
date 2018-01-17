@@ -29,6 +29,7 @@ namespace TeamSourceControlProject.Controllers
 
         public ActionResult Register()
         {
+           
             ViewBag.Message = "New users register here.";
             return View();
         }
