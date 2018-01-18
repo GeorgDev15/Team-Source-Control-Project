@@ -10,23 +10,23 @@ using System.Windows.Forms;
 
 namespace ADO.NETWithCRUD
 {
-    public partial class Form1 : Form
+    public partial class frmDatabase : Form
     {
-        public Form1()
+        public frmDatabase()
         {
             InitializeComponent();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Close();
+            RegisterUser RegUser = new RegisterUser();
+
+            RegUser.Show();
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            RegisterUser RegUser = new RegisterUser();
-
-            RegUser.Show();
+            throw new NotImplementedException();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
