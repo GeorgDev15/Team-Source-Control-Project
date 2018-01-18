@@ -12,7 +12,7 @@ namespace ADO.NETWithCRUD
         public static SqlConnection GetConnection()
         {
             //TODO: Add connection link
-            return new SqlConnection("")
+            return new SqlConnection("");
         }
     }
 }
