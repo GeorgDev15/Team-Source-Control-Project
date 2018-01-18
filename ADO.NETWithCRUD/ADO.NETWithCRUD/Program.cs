@@ -16,7 +16,7 @@ namespace ADO.NETWithCRUD
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmDatabase());
+            Application.Run(new frmMemberDB());
         }
     }
 }
