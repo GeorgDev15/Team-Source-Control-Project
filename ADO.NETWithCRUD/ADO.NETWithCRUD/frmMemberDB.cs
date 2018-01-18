@@ -19,17 +19,28 @@ namespace ADO.NETWithCRUD
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-
+            RegisterUser addMember = new RegisterUser();
+            addMember.ShowDialog();
+            //TODO: Add a method that populates listbox
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-
+            //TODO: Add a method that populates listbox
+            //TODO: Add a method that deletes selected item in listbox
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-
+            if(lstMembers.SelectedIndex < 0)
+            {
+                MessageBox.Show("Choose a member to update!");
+                return;
+            }
+            Member m = lstMembers.SelectedItem as Member;
+            UpdateUser updateMember = new UpdateUser(m);
+            updateMember.ShowDialog();
+            //TODO: Add a method that populates listbox
         }
 
         private void btnExit_Click(object sender, EventArgs e)

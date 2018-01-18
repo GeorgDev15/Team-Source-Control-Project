@@ -71,5 +71,32 @@ namespace ADO.NETWithCRUD
                 dbConnection.Dispose();
             }
         }
+        public static bool Update(Member currMember)
+        {
+            SqlCommand updateCmd = new SqlCommand();
+            updateCmd.CommandText = "UPDATE Member " +
+                                    "SET FirstName = @firstname, " +
+                                    "LastName = @lastname, " +
+                                    "BirthDate = @birthdate, " +
+                                    "FavoriteAnimal = @favoriteanimal " +
+                                    "WHERE MemberID = @memberid";
+            updateCmd.Parameters.AddWithValue("@firstname", currMember.FirstName);
+            updateCmd.Parameters.AddWithValue("@lastname", currMember.LastName);
+            updateCmd.Parameters.AddWithValue("@birthdate", currMember.BirthDate);
+            updateCmd.Parameters.AddWithValue("@favoriteanimal", currMember.FavoriteAnimal);
+            updateCmd.Parameters.AddWithValue("@memberid", currMember.MemberID);
+            using (SqlConnection con = DBHelper.GetConnection())
+            {
+                updateCmd.Connection = con;
+                con.Open();
+
+                int rows = updateCmd.ExecuteNonQuery();
+                if (rows == 1)
+                {
+                    return true;
+                }
+                return false;
+            }
+        }
     }
 }
