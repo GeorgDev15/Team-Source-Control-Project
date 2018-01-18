@@ -32,12 +32,12 @@
             this.txtFName = new System.Windows.Forms.TextBox();
             this.txtLName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtDOB = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.txtFaveAnimal = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnRegister = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.dtpDate = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label1
@@ -72,25 +72,9 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Last Name:";
             // 
-            // txtDOB
-            // 
-            this.txtDOB.Location = new System.Drawing.Point(125, 121);
-            this.txtDOB.Name = "txtDOB";
-            this.txtDOB.Size = new System.Drawing.Size(100, 20);
-            this.txtDOB.TabIndex = 5;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(86, 124);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(33, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "DOB:";
-            // 
             // txtFaveAnimal
             // 
-            this.txtFaveAnimal.Location = new System.Drawing.Point(125, 167);
+            this.txtFaveAnimal.Location = new System.Drawing.Point(125, 119);
             this.txtFaveAnimal.Name = "txtFaveAnimal";
             this.txtFaveAnimal.Size = new System.Drawing.Size(100, 20);
             this.txtFaveAnimal.TabIndex = 7;
@@ -98,7 +82,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(37, 170);
+            this.label4.Location = new System.Drawing.Point(37, 122);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(82, 13);
             this.label4.TabIndex = 6;
@@ -106,33 +90,51 @@
             // 
             // btnRegister
             // 
-            this.btnRegister.Location = new System.Drawing.Point(13, 233);
+            this.btnRegister.Location = new System.Drawing.Point(13, 347);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(75, 23);
             this.btnRegister.TabIndex = 8;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(197, 233);
+            this.btnCancel.Location = new System.Drawing.Point(197, 347);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 9;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(21, 163);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(33, 13);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "DOB:";
+            // 
+            // dtpDate
+            // 
+            this.dtpDate.Location = new System.Drawing.Point(62, 163);
+            this.dtpDate.Name = "dtpDate";
+            this.dtpDate.Size = new System.Drawing.Size(200, 20);
+            this.dtpDate.TabIndex = 11;
             // 
             // RegisterUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 271);
+            this.ClientSize = new System.Drawing.Size(284, 385);
+            this.Controls.Add(this.dtpDate);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.txtFaveAnimal);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtDOB);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.txtLName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtFName);
@@ -150,11 +152,11 @@
         private System.Windows.Forms.TextBox txtFName;
         private System.Windows.Forms.TextBox txtLName;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtDOB;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtFaveAnimal;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DateTimePicker dtpDate;
     }
 }

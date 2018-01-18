@@ -32,12 +32,12 @@
             this.txtFName = new System.Windows.Forms.TextBox();
             this.txtLName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtDOB = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.txtFaveAnimal = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.dtpDate = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -72,25 +72,9 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Last Name:";
             // 
-            // txtDOB
-            // 
-            this.txtDOB.Location = new System.Drawing.Point(119, 146);
-            this.txtDOB.Name = "txtDOB";
-            this.txtDOB.Size = new System.Drawing.Size(100, 20);
-            this.txtDOB.TabIndex = 5;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(80, 149);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(33, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "DOB:";
-            // 
             // txtFaveAnimal
             // 
-            this.txtFaveAnimal.Location = new System.Drawing.Point(119, 200);
+            this.txtFaveAnimal.Location = new System.Drawing.Point(119, 142);
             this.txtFaveAnimal.Name = "txtFaveAnimal";
             this.txtFaveAnimal.Size = new System.Drawing.Size(100, 20);
             this.txtFaveAnimal.TabIndex = 7;
@@ -98,7 +82,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(35, 203);
+            this.label4.Location = new System.Drawing.Point(35, 145);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(82, 13);
             this.label4.TabIndex = 6;
@@ -106,39 +90,57 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(13, 258);
+            this.btnUpdate.Location = new System.Drawing.Point(13, 340);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnUpdate.TabIndex = 8;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(197, 257);
+            this.btnCancel.Location = new System.Drawing.Point(197, 339);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 9;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             // 
+            // dtpDate
+            // 
+            this.dtpDate.Location = new System.Drawing.Point(72, 180);
+            this.dtpDate.Name = "dtpDate";
+            this.dtpDate.Size = new System.Drawing.Size(200, 20);
+            this.dtpDate.TabIndex = 10;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(35, 180);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(33, 13);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "DOB:";
+            // 
             // UpdateUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 295);
+            this.ClientSize = new System.Drawing.Size(284, 374);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.dtpDate);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.txtFaveAnimal);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtDOB);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.txtLName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtFName);
             this.Controls.Add(this.label1);
             this.Name = "UpdateUser";
             this.Text = "UpdateUser";
+            this.Load += new System.EventHandler(this.UpdateUser_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,11 +152,11 @@
         private System.Windows.Forms.TextBox txtFName;
         private System.Windows.Forms.TextBox txtLName;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtDOB;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtFaveAnimal;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.DateTimePicker dtpDate;
+        private System.Windows.Forms.Label label3;
     }
 }

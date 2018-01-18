@@ -16,5 +16,28 @@ namespace ADO.NETWithCRUD
         {
             InitializeComponent();
         }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            var mem = new Member();
+            mem.FirstName = txtFName.Text;
+            mem.LastName = txtLName.Text;
+            mem.FavoriteAnimal = txtFaveAnimal.Text;
+            mem.BirthDate = dtpDate.Value;
+
+            if (MemberDB.Add(mem))
+            {
+                MessageBox.Show("Member added!");
+            }
+            else
+            {
+                MessageBox.Show("Uh oh, something went wrong!" + "\nPlease try again.");
+            }
+        }
     }
 }

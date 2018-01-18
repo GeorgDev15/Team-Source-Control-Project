@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ADO.NETWithCRUD
 {
-    class Member
+    public class Member
     {
         public int MemberID { get; set; }
         public DateTime BirthDate { get; set; }
