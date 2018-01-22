@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -21,12 +22,12 @@ namespace ADO.NETWithCRUD
         {
             RegisterUser addMember = new RegisterUser();
             addMember.ShowDialog();
-            //TODO: Add a method that populates listbox
+            
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            //TODO: Add a method that populates listbox
+            
             //TODO: Add a method that deletes selected item in listbox
         }
 
@@ -40,12 +41,54 @@ namespace ADO.NETWithCRUD
             Member m = lstMembers.SelectedItem as Member;
             UpdateUser updateMember = new UpdateUser(m);
             updateMember.ShowDialog();
-            //TODO: Add a method that populates listbox
+            
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void frmMemberDB_Load(object sender, EventArgs e)
+        {
+            //On load access database to populate listbox.
+            SqlCommand retrieve = new SqlCommand();
+            retrieve.Connection = DBHelper.GetConnection();
+            retrieve.CommandText = "SELECT FirstName, LastName, BirthDate, FavoriteAnimal FROM Member";
+            
+
+            try
+            {
+
+                retrieve.Connection.Open();
+                SqlDataReader reader = retrieve.ExecuteReader();
+
+                var MemberList = new List<Member>();
+                while (reader.Read())
+                {
+
+                    var Members = new Member();
+                    Members.BirthDate = (DateTime)reader["BirthDate"];
+                    Members.FirstName = (String)reader["FirstName"];
+                    Members.LastName = (String)reader["LastName"];
+                    Members.FavoriteAnimal = (String)reader["FavoriteAnimal"];
+                    MemberList.Add(Members);
+
+                    //TODO: add items from list into textbox as objects so the update functionality works,
+                    //make it display in list box as well.
+
+                }
+
+                
+
+
+
+                
+            } finally
+
+            {
+                retrieve.Connection.Dispose();
+            }
         }
     }
 }

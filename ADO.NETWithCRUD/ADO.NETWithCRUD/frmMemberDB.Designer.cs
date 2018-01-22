@@ -38,9 +38,10 @@
             // 
             // btnRegister
             // 
-            this.btnRegister.Location = new System.Drawing.Point(27, 25);
+            this.btnRegister.Location = new System.Drawing.Point(36, 31);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(105, 43);
+            this.btnRegister.Size = new System.Drawing.Size(140, 53);
             this.btnRegister.TabIndex = 0;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = true;
@@ -49,25 +50,29 @@
             // lstMembers
             // 
             this.lstMembers.FormattingEnabled = true;
-            this.lstMembers.Location = new System.Drawing.Point(39, 192);
+            this.lstMembers.ItemHeight = 16;
+            this.lstMembers.Location = new System.Drawing.Point(52, 236);
+            this.lstMembers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lstMembers.Name = "lstMembers";
-            this.lstMembers.Size = new System.Drawing.Size(356, 173);
+            this.lstMembers.Size = new System.Drawing.Size(473, 212);
             this.lstMembers.TabIndex = 4;
             // 
             // lblRegUsers
             // 
             this.lblRegUsers.AutoSize = true;
-            this.lblRegUsers.Location = new System.Drawing.Point(175, 176);
+            this.lblRegUsers.Location = new System.Drawing.Point(233, 217);
+            this.lblRegUsers.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRegUsers.Name = "lblRegUsers";
-            this.lblRegUsers.Size = new System.Drawing.Size(88, 13);
+            this.lblRegUsers.Size = new System.Drawing.Size(118, 17);
             this.lblRegUsers.TabIndex = 5;
             this.lblRegUsers.Text = "Registered Users";
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(27, 105);
+            this.btnDelete.Location = new System.Drawing.Point(36, 129);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(105, 43);
+            this.btnDelete.Size = new System.Drawing.Size(140, 53);
             this.btnDelete.TabIndex = 6;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -75,9 +80,10 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(302, 25);
+            this.btnUpdate.Location = new System.Drawing.Point(403, 31);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(105, 43);
+            this.btnUpdate.Size = new System.Drawing.Size(140, 53);
             this.btnUpdate.TabIndex = 7;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -85,9 +91,10 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(302, 105);
+            this.btnExit.Location = new System.Drawing.Point(403, 129);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(105, 43);
+            this.btnExit.Size = new System.Drawing.Size(140, 53);
             this.btnExit.TabIndex = 8;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -95,17 +102,19 @@
             // 
             // frmMemberDB
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(447, 377);
+            this.ClientSize = new System.Drawing.Size(596, 464);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.lblRegUsers);
             this.Controls.Add(this.lstMembers);
             this.Controls.Add(this.btnRegister);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmMemberDB";
             this.Text = "frmMemberDB";
+            this.Load += new System.EventHandler(this.frmMemberDB_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

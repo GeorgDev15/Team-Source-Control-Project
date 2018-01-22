@@ -11,7 +11,7 @@ namespace ADO.NETWithCRUD
     {
         public static SqlConnection GetConnection()
         {
-            return new SqlConnection("Data Source=B11-R111E-07;Initial Catalog=MembersDB;Integrated Security=True;Pooling=False");
+            return new SqlConnection("Data Source=localhost\\SQLEXPRESS;Initial Catalog=MembersDB;Integrated Security=True");
         }
     }
 }
