@@ -54,7 +54,7 @@ namespace ADO.NETWithCRUD
             //On load access database to populate listbox.
             SqlCommand retrieve = new SqlCommand();
             retrieve.Connection = DBHelper.GetConnection();
-            retrieve.CommandText = "SELECT FirstName, LastName, BirthDate, FavoriteAnimal FROM Member";
+            retrieve.CommandText = "SELECT  MemberID, FirstName, LastName, BirthDate, FavoriteAnimal FROM Member";
             
 
             try
@@ -68,16 +68,19 @@ namespace ADO.NETWithCRUD
                 {
 
                     var Members = new Member();
+                    Members.MemberID = (int)reader["MemberID"];
                     Members.BirthDate = (DateTime)reader["BirthDate"];
                     Members.FirstName = (String)reader["FirstName"];
                     Members.LastName = (String)reader["LastName"];
                     Members.FavoriteAnimal = (String)reader["FavoriteAnimal"];
                     MemberList.Add(Members);
 
-                    //TODO: add items from list into textbox as objects so the update functionality works,
-                    //make it display in list box as well.
+                    
+                    lstMembers.Items.Add(Members);
 
                 }
+
+                
 
                 
 
