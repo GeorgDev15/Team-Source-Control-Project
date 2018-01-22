@@ -22,18 +22,31 @@ namespace ADO.NETWithCRUD
         {
             RegisterUser addMember = new RegisterUser();
             addMember.ShowDialog();
-            
+            lstMembers.Items.Clear();
+            PopulateListBox();
+
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            
-            //TODO: Add a method that deletes selected item in listbox
+            if (lstMembers.SelectedIndex < 0)
+            {
+                MessageBox.Show("Choose a member to delete!");
+                return;
+            }
+            Member ToDelete = lstMembers.SelectedItem as Member;
+
+            if (MemberDB.Delete(ToDelete))
+            {
+                MessageBox.Show("Member has been deleted!");
+                lstMembers.Items.Clear();
+                PopulateListBox();
+            }
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            if(lstMembers.SelectedIndex < 0)
+            if (lstMembers.SelectedIndex < 0)
             {
                 MessageBox.Show("Choose a member to update!");
                 return;
@@ -41,7 +54,10 @@ namespace ADO.NETWithCRUD
             Member m = lstMembers.SelectedItem as Member;
             UpdateUser updateMember = new UpdateUser(m);
             updateMember.ShowDialog();
-            
+            lstMembers.Items.Clear();
+            PopulateListBox();
+
+
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -51,46 +67,16 @@ namespace ADO.NETWithCRUD
 
         private void frmMemberDB_Load(object sender, EventArgs e)
         {
-            //On load access database to populate listbox.
-            SqlCommand retrieve = new SqlCommand();
-            retrieve.Connection = DBHelper.GetConnection();
-            retrieve.CommandText = "SELECT  MemberID, FirstName, LastName, BirthDate, FavoriteAnimal FROM Member";
-            
+            PopulateListBox();
 
-            try
+        }
+
+        private void PopulateListBox()
+        {
+            List<Member> memList = MemberDB.ListOfMembers();
+            foreach (Member M in memList)
             {
-
-                retrieve.Connection.Open();
-                SqlDataReader reader = retrieve.ExecuteReader();
-
-                var MemberList = new List<Member>();
-                while (reader.Read())
-                {
-
-                    var Members = new Member();
-                    Members.MemberID = (int)reader["MemberID"];
-                    Members.BirthDate = (DateTime)reader["BirthDate"];
-                    Members.FirstName = (String)reader["FirstName"];
-                    Members.LastName = (String)reader["LastName"];
-                    Members.FavoriteAnimal = (String)reader["FavoriteAnimal"];
-                    MemberList.Add(Members);
-
-                    
-                    lstMembers.Items.Add(Members);
-
-                }
-
-                
-
-                
-
-
-
-                
-            } finally
-
-            {
-                retrieve.Connection.Dispose();
+                lstMembers.Items.Add(M);
             }
         }
     }

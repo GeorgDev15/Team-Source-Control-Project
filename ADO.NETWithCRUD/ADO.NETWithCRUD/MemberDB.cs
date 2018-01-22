@@ -98,5 +98,62 @@ namespace ADO.NETWithCRUD
                 return false;
             }
         }
+
+        public static bool Delete(Member currMember)
+        {
+            SqlCommand updateCmd = new SqlCommand();
+            updateCmd.CommandText = "DELETE FROM Member WHERE MemberID = @MemberID";
+            updateCmd.Parameters.AddWithValue("@memberid", currMember.MemberID);
+            using (SqlConnection con = DBHelper.GetConnection())
+            {
+                updateCmd.Connection = con;
+                con.Open();
+
+                int rows = updateCmd.ExecuteNonQuery();
+                if (rows == 1)
+                {
+                    return true;
+                }
+                return false;
+            }
+        }
+
+        public static List<Member> ListOfMembers()
+        {
+            SqlCommand retrieve = new SqlCommand();
+            retrieve.Connection = DBHelper.GetConnection();
+            retrieve.CommandText = "SELECT  MemberID, FirstName, LastName, BirthDate, FavoriteAnimal FROM Member";
+            var MemberList = new List<Member>();
+
+            try
+            {
+
+                retrieve.Connection.Open();
+                SqlDataReader reader = retrieve.ExecuteReader();
+
+                
+                while (reader.Read())
+                {
+
+                    var Members = new Member();
+                    Members.MemberID = (int)reader["MemberID"];
+                    Members.BirthDate = (DateTime)reader["BirthDate"];
+                    Members.FirstName = (String)reader["FirstName"];
+                    Members.LastName = (String)reader["LastName"];
+                    Members.FavoriteAnimal = (String)reader["FavoriteAnimal"];
+                    MemberList.Add(Members);
+
+
+
+                }
+            }
+            finally
+
+            {
+                retrieve.Connection.Dispose();
+            }
+            return MemberList;
+        }
     }
 }
+

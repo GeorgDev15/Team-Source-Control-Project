@@ -36,6 +36,7 @@ namespace ADO.NETWithCRUD
             if(MemberDB.Update(currMem))
             {
                 MessageBox.Show("Member updated!");
+
                 this.Close();
             }
             else
