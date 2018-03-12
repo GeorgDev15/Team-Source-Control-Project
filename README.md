@@ -1,2 +1,7 @@
 # Team-Source-Control-Project
-To create a data-driven project with ADO.NET and implement CRUD functionality for an entity.
+Repository for team projects.
+There are 4 projects:
+- ADO.NETWithCRUD
+- MVC
+- RPGGameCharacterCreator (Currently working on)
+- TeamSourceControlProject
