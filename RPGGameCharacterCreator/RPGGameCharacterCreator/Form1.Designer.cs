@@ -46,6 +46,7 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.BtnFight = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -97,6 +98,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(67, 41);
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 8;
             // 
@@ -113,6 +115,7 @@
             // 
             this.textBox3.Location = new System.Drawing.Point(67, 79);
             this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 10;
             // 
@@ -129,6 +132,7 @@
             // 
             this.textBox5.Location = new System.Drawing.Point(495, 44);
             this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(100, 20);
             this.textBox5.TabIndex = 14;
             // 
@@ -145,6 +149,7 @@
             // 
             this.textBox6.Location = new System.Drawing.Point(495, 82);
             this.textBox6.Name = "textBox6";
+            this.textBox6.ReadOnly = true;
             this.textBox6.Size = new System.Drawing.Size(100, 20);
             this.textBox6.TabIndex = 16;
             // 
@@ -161,6 +166,7 @@
             // 
             this.textBox7.Location = new System.Drawing.Point(67, 116);
             this.textBox7.Name = "textBox7";
+            this.textBox7.ReadOnly = true;
             this.textBox7.Size = new System.Drawing.Size(100, 20);
             this.textBox7.TabIndex = 18;
             // 
@@ -177,6 +183,7 @@
             // 
             this.textBox8.Location = new System.Drawing.Point(495, 116);
             this.textBox8.Name = "textBox8";
+            this.textBox8.ReadOnly = true;
             this.textBox8.Size = new System.Drawing.Size(100, 20);
             this.textBox8.TabIndex = 20;
             // 
@@ -195,14 +202,24 @@
             this.BtnFight.Name = "BtnFight";
             this.BtnFight.Size = new System.Drawing.Size(75, 23);
             this.BtnFight.TabIndex = 21;
-            this.BtnFight.Text = "Fight";
+            this.BtnFight.Text = "Fight!";
             this.BtnFight.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(252, 146);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(107, 53);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "Create a Character";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(606, 220);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnFight);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.label10);
@@ -248,6 +265,7 @@
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button BtnFight;
+        private System.Windows.Forms.Button button1;
     }
 }
 
