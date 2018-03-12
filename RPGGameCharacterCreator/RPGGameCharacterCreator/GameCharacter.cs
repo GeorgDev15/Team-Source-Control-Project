@@ -22,4 +22,5 @@ namespace RPGGameCharacterCreator
         public int STR { get; set; }
         public int DEF { get; set; }
     }
+    
 }
