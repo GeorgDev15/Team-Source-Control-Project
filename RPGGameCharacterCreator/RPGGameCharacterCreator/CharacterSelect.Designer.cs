@@ -44,12 +44,15 @@
             this.BtnAddSTR = new System.Windows.Forms.Button();
             this.BtnAddDEF = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.LblRandomAlottment = new System.Windows.Forms.Label();
+            this.BtnReset = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtnCreate
             // 
             this.BtnCreate.Location = new System.Drawing.Point(124, 273);
-            this.BtnCreate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtnCreate.Margin = new System.Windows.Forms.Padding(4);
             this.BtnCreate.Name = "BtnCreate";
             this.BtnCreate.Size = new System.Drawing.Size(100, 28);
             this.BtnCreate.TabIndex = 2;
@@ -60,7 +63,7 @@
             // BtnRandom
             // 
             this.BtnRandom.Location = new System.Drawing.Point(16, 273);
-            this.BtnRandom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtnRandom.Margin = new System.Windows.Forms.Padding(4);
             this.BtnRandom.Name = "BtnRandom";
             this.BtnRandom.Size = new System.Drawing.Size(100, 28);
             this.BtnRandom.TabIndex = 3;
@@ -121,7 +124,7 @@
             // txtCharacterName
             // 
             this.txtCharacterName.Location = new System.Drawing.Point(144, 54);
-            this.txtCharacterName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCharacterName.Margin = new System.Windows.Forms.Padding(4);
             this.txtCharacterName.Name = "txtCharacterName";
             this.txtCharacterName.Size = new System.Drawing.Size(132, 22);
             this.txtCharacterName.TabIndex = 9;
@@ -139,7 +142,7 @@
             // TxtVitality
             // 
             this.TxtVitality.Location = new System.Drawing.Point(95, 103);
-            this.TxtVitality.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtVitality.Margin = new System.Windows.Forms.Padding(4);
             this.TxtVitality.Name = "TxtVitality";
             this.TxtVitality.Size = new System.Drawing.Size(37, 22);
             this.TxtVitality.TabIndex = 11;
@@ -147,7 +150,7 @@
             // TxtDefense
             // 
             this.TxtDefense.Location = new System.Drawing.Point(95, 206);
-            this.TxtDefense.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtDefense.Margin = new System.Windows.Forms.Padding(4);
             this.TxtDefense.Name = "TxtDefense";
             this.TxtDefense.Size = new System.Drawing.Size(40, 22);
             this.TxtDefense.TabIndex = 12;
@@ -155,7 +158,7 @@
             // TxtStrength
             // 
             this.TxtStrength.Location = new System.Drawing.Point(95, 155);
-            this.TxtStrength.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtStrength.Margin = new System.Windows.Forms.Padding(4);
             this.TxtStrength.Name = "TxtStrength";
             this.TxtStrength.Size = new System.Drawing.Size(40, 22);
             this.TxtStrength.TabIndex = 13;
@@ -163,7 +166,7 @@
             // BtnAddVIT
             // 
             this.BtnAddVIT.Location = new System.Drawing.Point(144, 101);
-            this.BtnAddVIT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtnAddVIT.Margin = new System.Windows.Forms.Padding(4);
             this.BtnAddVIT.Name = "BtnAddVIT";
             this.BtnAddVIT.Size = new System.Drawing.Size(27, 28);
             this.BtnAddVIT.TabIndex = 14;
@@ -174,27 +177,29 @@
             // BtnAddSTR
             // 
             this.BtnAddSTR.Location = new System.Drawing.Point(144, 151);
-            this.BtnAddSTR.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtnAddSTR.Margin = new System.Windows.Forms.Padding(4);
             this.BtnAddSTR.Name = "BtnAddSTR";
             this.BtnAddSTR.Size = new System.Drawing.Size(27, 28);
             this.BtnAddSTR.TabIndex = 15;
             this.BtnAddSTR.Text = "+";
             this.BtnAddSTR.UseVisualStyleBackColor = true;
+            this.BtnAddSTR.Click += new System.EventHandler(this.BtnAddSTR_Click);
             // 
             // BtnAddDEF
             // 
             this.BtnAddDEF.Location = new System.Drawing.Point(144, 202);
-            this.BtnAddDEF.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtnAddDEF.Margin = new System.Windows.Forms.Padding(4);
             this.BtnAddDEF.Name = "BtnAddDEF";
             this.BtnAddDEF.Size = new System.Drawing.Size(27, 28);
             this.BtnAddDEF.TabIndex = 16;
             this.BtnAddDEF.Text = "+";
             this.BtnAddDEF.UseVisualStyleBackColor = true;
+            this.BtnAddDEF.Click += new System.EventHandler(this.BtnAddDEF_Click);
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(232, 273);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 17;
@@ -202,11 +207,42 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(175, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(119, 17);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "Randomize Stats:";
+            // 
+            // LblRandomAlottment
+            // 
+            this.LblRandomAlottment.AutoSize = true;
+            this.LblRandomAlottment.Location = new System.Drawing.Point(296, 11);
+            this.LblRandomAlottment.Name = "LblRandomAlottment";
+            this.LblRandomAlottment.Size = new System.Drawing.Size(16, 17);
+            this.LblRandomAlottment.TabIndex = 19;
+            this.LblRandomAlottment.Text = "5";
+            // 
+            // BtnReset
+            // 
+            this.BtnReset.Location = new System.Drawing.Point(232, 202);
+            this.BtnReset.Name = "BtnReset";
+            this.BtnReset.Size = new System.Drawing.Size(98, 55);
+            this.BtnReset.TabIndex = 20;
+            this.BtnReset.Text = "Reset";
+            this.BtnReset.UseVisualStyleBackColor = true;
+            this.BtnReset.Click += new System.EventHandler(this.BtnReset_Click);
+            // 
             // CreateCharacter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(347, 316);
+            this.Controls.Add(this.BtnReset);
+            this.Controls.Add(this.LblRandomAlottment);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnAddDEF);
             this.Controls.Add(this.BtnAddSTR);
@@ -223,7 +259,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.BtnRandom);
             this.Controls.Add(this.BtnCreate);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CreateCharacter";
             this.Text = "Create a Character";
             this.ResumeLayout(false);
@@ -248,5 +284,8 @@
         private System.Windows.Forms.Button BtnAddSTR;
         private System.Windows.Forms.Button BtnAddDEF;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label LblRandomAlottment;
+        private System.Windows.Forms.Button BtnReset;
     }
 }

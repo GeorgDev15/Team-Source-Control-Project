@@ -12,6 +12,12 @@ namespace RPGGameCharacterCreator
 {
     public partial class CreateCharacter : Form
     {
+        //amount of points allowed to allocate to stats.
+        int AllocationLimit = 10;
+
+        //amount of times the user is allowed to randomize stats of a character.
+        int RandomizeLimit = 5;
+
 
         public CreateCharacter()
         {
@@ -53,12 +59,24 @@ namespace RPGGameCharacterCreator
             return VitToReturn;
         }
 
-
+        /// <summary>
+        /// randomize the three stats of the character. Can only be done 5 times.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnRandom_Click(object sender, EventArgs e)
         {
-            TxtDefense.Text = Convert.ToString(RandomStat());
-            TxtStrength.Text = Convert.ToString(RandomStat());
-            TxtVitality.Text = Convert.ToString(RandomVitality());
+            if (RandomizeLimit != 0)
+            {
+               
+                TxtDefense.Text = Convert.ToString(RandomStat());
+                TxtStrength.Text = Convert.ToString(RandomStat());
+                TxtVitality.Text = Convert.ToString(RandomVitality());
+                RandomizeLimit -= 1;
+                LblRandomAlottment.Text = Convert.ToString(RandomizeLimit);
+            }
+            else
+                MessageBox.Show("You've reached the limit of times you can randomize stats.");
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -68,7 +86,15 @@ namespace RPGGameCharacterCreator
 
         private void BtnAddVIT_Click(object sender, EventArgs e)
         {
-            PlusVitality();
+            if (!string.IsNullOrWhiteSpace(TxtVitality.Text))
+            {
+                if (AllocationLimiter())
+                {
+                    PlusVitality();
+                }
+                else
+                    MessageBox.Show("All points have been used.");
+            }
 
         }
 
@@ -79,7 +105,94 @@ namespace RPGGameCharacterCreator
                 int Vitality = Convert.ToInt32(TxtVitality.Text);
                 Vitality += 1;
                 TxtVitality.Text = Convert.ToString(Vitality);
+            }
+            else
+            {
+                MessageBox.Show("There needs to be a value in here.");
+            }
+        }
 
+        private void BtnAddSTR_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(TxtStrength.Text))
+            {
+                if (AllocationLimiter())
+                {
+                    AddStrength();
+                }
+                else
+                    MessageBox.Show("All points have been used.");
+            }
+        }
+
+        private void AddStrength()
+        {
+            if (!string.IsNullOrWhiteSpace(TxtStrength.Text))
+            {
+                int Strength = Convert.ToInt32(TxtStrength.Text);
+                Strength += 1;
+                TxtStrength.Text = Convert.ToString(Strength);
+            }
+            else
+            {
+                MessageBox.Show("There needs to be a value in here.");
+            }
+        }
+
+        /// <summary>
+        /// Subtracts from the allocation points to ensure users don't
+        /// go over the limit.
+        /// </summary>
+        /// <returns> true if there are still points left to allocate, and false if not.</returns>
+        public bool AllocationLimiter()
+        {
+            if (AllocationLimit != 0)
+            {
+                AllocationLimit -= 1;
+                LblAllocation.Text = Convert.ToString(AllocationLimit);
+                return true;
+            }
+            else return false;
+
+        }
+
+        /// <summary>
+        /// Clears out all text boxes and returns limits to their original state.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BtnReset_Click(object sender, EventArgs e)
+        {
+            txtCharacterName.Clear();
+            TxtDefense.Clear();
+            TxtStrength.Clear();
+            TxtVitality.Clear();
+            AllocationLimit = 10;
+            RandomizeLimit = 5;
+            LblAllocation.Text = Convert.ToString(AllocationLimit);
+            LblRandomAlottment.Text = Convert.ToString(RandomizeLimit);
+        }
+
+        private void BtnAddDEF_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(TxtDefense.Text))
+            {
+                if (AllocationLimiter())
+                {
+                    AddDef();
+                }
+                else
+                    MessageBox.Show("All points have been used.");
+            }
+        }
+
+        private void AddDef()
+        {
+            if (!string.IsNullOrWhiteSpace(TxtDefense.Text))
+            {
+                int Defense = Convert.ToInt32(TxtDefense.Text);
+                Defense += 1;
+                TxtDefense.Text = Convert.ToString(Defense);
             }
             else
             {
