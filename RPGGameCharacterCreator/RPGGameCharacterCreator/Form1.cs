@@ -10,8 +10,12 @@ using System.Windows.Forms;
 
 namespace RPGGameCharacterCreator
 {
+
     public partial class Form1 : Form
     {
+
+        //GameCharacter[] Characters = new GameCharacter[10];
+        
         public Form1()
         {
             InitializeComponent();
@@ -19,7 +23,9 @@ namespace RPGGameCharacterCreator
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new CreateCharacter().ShowDialog(); 
+            CreateCharacter a = new CreateCharacter();
+            a.ShowDialog();
+            
         }
 
     }

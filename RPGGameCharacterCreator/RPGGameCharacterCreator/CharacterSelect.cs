@@ -24,17 +24,32 @@ namespace RPGGameCharacterCreator
             InitializeComponent();
         }
 
+        /// <summary>
+        /// validates for empty name or stat boxes and if successful,
+        /// adds a character to the characters array in the main form. Database functionality
+        /// needs to be added still.
+        /// </summary>
+        
         private void BtnCreate_Click(object sender, EventArgs e)
         {
+            if (!String.IsNullOrWhiteSpace(txtCharacterName.Text) && !string.IsNullOrWhiteSpace(TxtDefense.Text)
+                    && !string.IsNullOrWhiteSpace(TxtStrength.Text) && !string.IsNullOrWhiteSpace(TxtVitality.Text))
+            {
+                GameCharacter G = new GameCharacter();
+                G.Name = txtCharacterName.Text;
+                G.DEF = Convert.ToInt32(TxtDefense.Text);
+                G.STR = Convert.ToInt32(TxtStrength.Text);
+                G.VIT = Convert.ToInt32(TxtVitality.Text);
+                //default should be at zero?
+                G.XP = 0;
 
-            GameCharacter G = new GameCharacter();
-            G.Name = txtCharacterName.Text;
-            G.DEF = Convert.ToInt32(TxtDefense.Text);
-            G.STR = Convert.ToInt32(TxtStrength.Text);
-            G.VIT = Convert.ToInt32(TxtVitality.Text);
-            //default should be at zero?
-            G.XP = 0;
-            this.Close();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("You need to give your character a name or you failed to roll stats.");
+            }
+
         }
 
         /// <summary>
@@ -68,12 +83,16 @@ namespace RPGGameCharacterCreator
         {
             if (RandomizeLimit != 0)
             {
-               
+
                 TxtDefense.Text = Convert.ToString(RandomStat());
                 TxtStrength.Text = Convert.ToString(RandomStat());
                 TxtVitality.Text = Convert.ToString(RandomVitality());
                 RandomizeLimit -= 1;
                 LblRandomAlottment.Text = Convert.ToString(RandomizeLimit);
+
+                //reset allocated points when randomizing.
+                AllocationLimit = 10;
+                LblAllocation.Text = Convert.ToString(AllocationLimit);
             }
             else
                 MessageBox.Show("You've reached the limit of times you can randomize stats.");
@@ -198,6 +217,13 @@ namespace RPGGameCharacterCreator
             {
                 MessageBox.Show("There needs to be a value in here.");
             }
+        }
+
+        private void CreateCharacter_Load(object sender, EventArgs e)
+        {
+            TxtDefense.Text = Convert.ToString(RandomStat());
+            TxtStrength.Text = Convert.ToString(RandomStat());
+            TxtVitality.Text = Convert.ToString(RandomVitality());
         }
     }
 }

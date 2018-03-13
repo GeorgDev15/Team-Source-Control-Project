@@ -141,14 +141,16 @@
             // 
             // TxtVitality
             // 
+            this.TxtVitality.Enabled = false;
             this.TxtVitality.Location = new System.Drawing.Point(95, 103);
             this.TxtVitality.Margin = new System.Windows.Forms.Padding(4);
             this.TxtVitality.Name = "TxtVitality";
-            this.TxtVitality.Size = new System.Drawing.Size(37, 22);
+            this.TxtVitality.Size = new System.Drawing.Size(41, 22);
             this.TxtVitality.TabIndex = 11;
             // 
             // TxtDefense
             // 
+            this.TxtDefense.Enabled = false;
             this.TxtDefense.Location = new System.Drawing.Point(95, 206);
             this.TxtDefense.Margin = new System.Windows.Forms.Padding(4);
             this.TxtDefense.Name = "TxtDefense";
@@ -157,6 +159,7 @@
             // 
             // TxtStrength
             // 
+            this.TxtStrength.Enabled = false;
             this.TxtStrength.Location = new System.Drawing.Point(95, 155);
             this.TxtStrength.Margin = new System.Windows.Forms.Padding(4);
             this.TxtStrength.Name = "TxtStrength";
@@ -262,6 +265,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CreateCharacter";
             this.Text = "Create a Character";
+            this.Load += new System.EventHandler(this.CreateCharacter_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
