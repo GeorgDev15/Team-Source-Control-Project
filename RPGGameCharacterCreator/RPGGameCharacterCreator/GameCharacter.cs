@@ -12,9 +12,9 @@ namespace RPGGameCharacterCreator
         /// Properties of the GameCharacter object
         /// Legend:
         /// - XP = Experience points
-        /// - VIT = Vitality
-        /// - STR = Strength
-        /// - DEF = Defense
+        /// - VIT = Vitality or health.
+        /// - STR = Strength or attack.
+        /// - DEF = Defense, confers a chance to block damage.
         /// </summary>
         public string Name { get; set; }
         public int XP { get; set; }
