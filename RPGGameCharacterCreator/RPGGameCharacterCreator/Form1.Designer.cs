@@ -49,7 +49,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.lblFighterOne = new System.Windows.Forms.Label();
             this.lblFighterTwo = new System.Windows.Forms.Label();
-            this.btnStartFight = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.lblHP1 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -228,7 +227,7 @@
             // 
             // BtnSetFighters
             // 
-            this.BtnSetFighters.Location = new System.Drawing.Point(303, 41);
+            this.BtnSetFighters.Location = new System.Drawing.Point(354, 37);
             this.BtnSetFighters.Margin = new System.Windows.Forms.Padding(4);
             this.BtnSetFighters.Name = "BtnSetFighters";
             this.BtnSetFighters.Size = new System.Drawing.Size(100, 28);
@@ -270,16 +269,6 @@
             this.lblFighterTwo.TabIndex = 24;
             this.lblFighterTwo.Text = "Fighter Two";
             this.lblFighterTwo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // btnStartFight
-            // 
-            this.btnStartFight.Location = new System.Drawing.Point(411, 41);
-            this.btnStartFight.Margin = new System.Windows.Forms.Padding(4);
-            this.btnStartFight.Name = "btnStartFight";
-            this.btnStartFight.Size = new System.Drawing.Size(100, 28);
-            this.btnStartFight.TabIndex = 26;
-            this.btnStartFight.Text = "Fight!";
-            this.btnStartFight.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -328,7 +317,6 @@
             this.Controls.Add(this.label11);
             this.Controls.Add(this.lblHP1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.btnStartFight);
             this.Controls.Add(this.lblFighterTwo);
             this.Controls.Add(this.lblFighterOne);
             this.Controls.Add(this.button1);
@@ -381,7 +369,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label lblFighterOne;
         private System.Windows.Forms.Label lblFighterTwo;
-        private System.Windows.Forms.Button btnStartFight;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblHP1;
         private System.Windows.Forms.Label label11;

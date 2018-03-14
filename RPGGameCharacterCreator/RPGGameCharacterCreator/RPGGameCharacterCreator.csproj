@@ -45,11 +45,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CharacterSelect.cs">
+    <Compile Include="CharacterCreation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CharacterSelect.Designer.cs">
-      <DependentUpon>CharacterSelect.cs</DependentUpon>
+    <Compile Include="CharacterCreation.Designer.cs">
+      <DependentUpon>CharacterCreation.cs</DependentUpon>
     </Compile>
     <Compile Include="FightResult.cs">
       <SubType>Form</SubType>
@@ -66,8 +66,8 @@
     <Compile Include="GameCharacter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="CharacterSelect.resx">
-      <DependentUpon>CharacterSelect.cs</DependentUpon>
+    <EmbeddedResource Include="CharacterCreation.resx">
+      <DependentUpon>CharacterCreation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FightResult.resx">
       <DependentUpon>FightResult.cs</DependentUpon>
