@@ -22,5 +22,9 @@ namespace RPGGameCharacterCreator
             new CreateCharacter().ShowDialog(); 
         }
 
+        private void BtnCharacterSelect1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

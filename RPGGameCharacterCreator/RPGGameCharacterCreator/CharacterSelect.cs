@@ -26,14 +26,20 @@ namespace RPGGameCharacterCreator
 
         private void BtnCreate_Click(object sender, EventArgs e)
         {
-
             GameCharacter G = new GameCharacter();
-            G.Name = txtCharacterName.Text;
-            G.DEF = Convert.ToInt32(TxtDefense.Text);
-            G.STR = Convert.ToInt32(TxtStrength.Text);
-            G.VIT = Convert.ToInt32(TxtVitality.Text);
-            //default should be at zero?
-            G.XP = 0;
+            if (!string.IsNullOrWhiteSpace(txtCharacterName.Text))
+            {
+                G.Name = txtCharacterName.Text;
+                G.DEF = Convert.ToInt32(TxtDefense.Text);
+                G.STR = Convert.ToInt32(TxtStrength.Text);
+                G.VIT = Convert.ToInt32(TxtVitality.Text);
+                // since XP is an int it defaults to zero
+                CharacterDB.AddCharacter(G);
+            }
+            else
+            {
+                MessageBox.Show("Name cannot be empty!");
+            }
             this.Close();
         }
 

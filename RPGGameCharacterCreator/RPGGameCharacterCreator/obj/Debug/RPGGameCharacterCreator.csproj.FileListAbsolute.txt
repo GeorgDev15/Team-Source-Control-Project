@@ -22,3 +22,33 @@ C:\Users\Stell\Desktop\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug
 C:\Users\Stell\Desktop\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.csproj.CoreCompileInputs.cache
 C:\Users\Stell\Desktop\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.exe
 C:\Users\Stell\Desktop\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.pdb
+C:\Users\Eli\Source\Repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\bin\Debug\RPGGameCharacterCreator.exe.config
+C:\Users\Eli\Source\Repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\bin\Debug\RPGGameCharacterCreator.exe
+C:\Users\Eli\Source\Repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\bin\Debug\RPGGameCharacterCreator.pdb
+C:\Users\Eli\Source\Repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.csprojResolveAssemblyReference.cache
+C:\Users\Eli\Source\Repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.CreateCharacter.resources
+C:\Users\Eli\Source\Repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.FightResult.resources
+C:\Users\Eli\Source\Repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.Form1.resources
+C:\Users\Eli\Source\Repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.Properties.Resources.resources
+C:\Users\Eli\Source\Repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.csproj.GenerateResource.Cache
+C:\Users\Eli\Source\Repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.csproj.CoreCompileInputs.cache
+C:\Users\Eli\Source\Repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.exe
+C:\Users\Eli\Source\Repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.pdb
+G:\CPW 212 Advanced .NET Programming\Final Project\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\bin\Debug\RPGGameCharacterCreator.exe.config
+G:\CPW 212 Advanced .NET Programming\Final Project\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\bin\Debug\RPGGameCharacterCreator.exe
+G:\CPW 212 Advanced .NET Programming\Final Project\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\bin\Debug\RPGGameCharacterCreator.pdb
+G:\CPW 212 Advanced .NET Programming\Final Project\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\bin\Debug\EntityFramework.dll
+G:\CPW 212 Advanced .NET Programming\Final Project\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\bin\Debug\EntityFramework.SqlServer.dll
+G:\CPW 212 Advanced .NET Programming\Final Project\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\bin\Debug\EntityFramework.xml
+G:\CPW 212 Advanced .NET Programming\Final Project\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\bin\Debug\EntityFramework.SqlServer.xml
+G:\CPW 212 Advanced .NET Programming\Final Project\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.csprojResolveAssemblyReference.cache
+G:\CPW 212 Advanced .NET Programming\Final Project\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.CreateCharacter.resources
+G:\CPW 212 Advanced .NET Programming\Final Project\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.FightResult.resources
+G:\CPW 212 Advanced .NET Programming\Final Project\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.Form1.resources
+G:\CPW 212 Advanced .NET Programming\Final Project\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.Properties.Resources.resources
+G:\CPW 212 Advanced .NET Programming\Final Project\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.csproj.GenerateResource.cache
+G:\CPW 212 Advanced .NET Programming\Final Project\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.csproj.CoreCompileInputs.cache
+G:\CPW 212 Advanced .NET Programming\Final Project\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.csproj.CopyComplete
+G:\CPW 212 Advanced .NET Programming\Final Project\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.exe
+G:\CPW 212 Advanced .NET Programming\Final Project\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.pdb
+G:\CPW 212 Advanced .NET Programming\Final Project\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.Migrations.AddedCharacterID.resources
