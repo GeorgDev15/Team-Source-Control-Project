@@ -31,22 +31,24 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.LblCharacter2 = new System.Windows.Forms.Label();
-            this.BtnCharacterSelect1 = new System.Windows.Forms.Button();
-            this.BtnCharacterSelect2 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtHp1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtStr1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtHp2 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtStr2 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtDef1 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtDef2 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.BtnFight = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.lblName1 = new System.Windows.Forms.Label();
+            this.lblName2 = new System.Windows.Forms.Label();
+            this.cboCharacterSelect1 = new System.Windows.Forms.ComboBox();
+            this.cboCharacterSelect2 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -76,32 +78,13 @@
             this.LblCharacter2.TabIndex = 2;
             this.LblCharacter2.Text = "Select Character";
             // 
-            // BtnCharacterSelect1
+            // txtHp1
             // 
-            this.BtnCharacterSelect1.Location = new System.Drawing.Point(16, 176);
-            this.BtnCharacterSelect1.Name = "BtnCharacterSelect1";
-            this.BtnCharacterSelect1.Size = new System.Drawing.Size(107, 23);
-            this.BtnCharacterSelect1.TabIndex = 3;
-            this.BtnCharacterSelect1.Text = "Character Select";
-            this.BtnCharacterSelect1.UseVisualStyleBackColor = true;
-            this.BtnCharacterSelect1.Click += new System.EventHandler(this.BtnCharacterSelect1_Click);
-            // 
-            // BtnCharacterSelect2
-            // 
-            this.BtnCharacterSelect2.Location = new System.Drawing.Point(476, 176);
-            this.BtnCharacterSelect2.Name = "BtnCharacterSelect2";
-            this.BtnCharacterSelect2.Size = new System.Drawing.Size(111, 23);
-            this.BtnCharacterSelect2.TabIndex = 4;
-            this.BtnCharacterSelect2.Text = "Character Select";
-            this.BtnCharacterSelect2.UseVisualStyleBackColor = true;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(67, 41);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 8;
+            this.txtHp1.Location = new System.Drawing.Point(67, 41);
+            this.txtHp1.Name = "txtHp1";
+            this.txtHp1.ReadOnly = true;
+            this.txtHp1.Size = new System.Drawing.Size(100, 20);
+            this.txtHp1.TabIndex = 8;
             // 
             // label4
             // 
@@ -112,13 +95,13 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "HP:";
             // 
-            // textBox3
+            // txtStr1
             // 
-            this.textBox3.Location = new System.Drawing.Point(67, 79);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 10;
+            this.txtStr1.Location = new System.Drawing.Point(67, 79);
+            this.txtStr1.Name = "txtStr1";
+            this.txtStr1.ReadOnly = true;
+            this.txtStr1.Size = new System.Drawing.Size(100, 20);
+            this.txtStr1.TabIndex = 10;
             // 
             // label5
             // 
@@ -129,13 +112,13 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "STR:";
             // 
-            // textBox5
+            // txtHp2
             // 
-            this.textBox5.Location = new System.Drawing.Point(495, 44);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 14;
+            this.txtHp2.Location = new System.Drawing.Point(495, 44);
+            this.txtHp2.Name = "txtHp2";
+            this.txtHp2.ReadOnly = true;
+            this.txtHp2.Size = new System.Drawing.Size(100, 20);
+            this.txtHp2.TabIndex = 14;
             // 
             // label7
             // 
@@ -146,13 +129,13 @@
             this.label7.TabIndex = 13;
             this.label7.Text = "HP:";
             // 
-            // textBox6
+            // txtStr2
             // 
-            this.textBox6.Location = new System.Drawing.Point(495, 82);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 16;
+            this.txtStr2.Location = new System.Drawing.Point(495, 82);
+            this.txtStr2.Name = "txtStr2";
+            this.txtStr2.ReadOnly = true;
+            this.txtStr2.Size = new System.Drawing.Size(100, 20);
+            this.txtStr2.TabIndex = 16;
             // 
             // label8
             // 
@@ -163,13 +146,13 @@
             this.label8.TabIndex = 15;
             this.label8.Text = "STR:";
             // 
-            // textBox7
+            // txtDef1
             // 
-            this.textBox7.Location = new System.Drawing.Point(67, 116);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 18;
+            this.txtDef1.Location = new System.Drawing.Point(67, 116);
+            this.txtDef1.Name = "txtDef1";
+            this.txtDef1.ReadOnly = true;
+            this.txtDef1.Size = new System.Drawing.Size(100, 20);
+            this.txtDef1.TabIndex = 18;
             // 
             // label9
             // 
@@ -180,13 +163,13 @@
             this.label9.TabIndex = 17;
             this.label9.Text = "DEF:";
             // 
-            // textBox8
+            // txtDef2
             // 
-            this.textBox8.Location = new System.Drawing.Point(495, 116);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 20;
+            this.txtDef2.Location = new System.Drawing.Point(495, 116);
+            this.txtDef2.Name = "txtDef2";
+            this.txtDef2.ReadOnly = true;
+            this.txtDef2.Size = new System.Drawing.Size(100, 20);
+            this.txtDef2.TabIndex = 20;
             // 
             // label10
             // 
@@ -216,32 +199,71 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // lblName1
+            // 
+            this.lblName1.AutoSize = true;
+            this.lblName1.Location = new System.Drawing.Point(191, 44);
+            this.lblName1.Name = "lblName1";
+            this.lblName1.Size = new System.Drawing.Size(0, 13);
+            this.lblName1.TabIndex = 23;
+            // 
+            // lblName2
+            // 
+            this.lblName2.AutoSize = true;
+            this.lblName2.Location = new System.Drawing.Point(321, 44);
+            this.lblName2.Name = "lblName2";
+            this.lblName2.Size = new System.Drawing.Size(0, 13);
+            this.lblName2.TabIndex = 24;
+            // 
+            // cboCharacterSelect1
+            // 
+            this.cboCharacterSelect1.FormattingEnabled = true;
+            this.cboCharacterSelect1.Location = new System.Drawing.Point(16, 163);
+            this.cboCharacterSelect1.Name = "cboCharacterSelect1";
+            this.cboCharacterSelect1.Size = new System.Drawing.Size(151, 21);
+            this.cboCharacterSelect1.TabIndex = 25;
+            this.cboCharacterSelect1.Text = "Select A Character";
+            this.cboCharacterSelect1.SelectedIndexChanged += new System.EventHandler(this.cboCharacterSelect1_SelectedIndexChanged);
+            // 
+            // cboCharacterSelect2
+            // 
+            this.cboCharacterSelect2.FormattingEnabled = true;
+            this.cboCharacterSelect2.Location = new System.Drawing.Point(445, 163);
+            this.cboCharacterSelect2.Name = "cboCharacterSelect2";
+            this.cboCharacterSelect2.Size = new System.Drawing.Size(150, 21);
+            this.cboCharacterSelect2.TabIndex = 26;
+            this.cboCharacterSelect2.Text = "Select A Character";
+            this.cboCharacterSelect2.SelectedIndexChanged += new System.EventHandler(this.cboCharacterSelect2_SelectedIndexChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(606, 220);
+            this.Controls.Add(this.cboCharacterSelect2);
+            this.Controls.Add(this.cboCharacterSelect1);
+            this.Controls.Add(this.lblName2);
+            this.Controls.Add(this.lblName1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnFight);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.txtDef2);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.txtDef1);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txtStr2);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtHp2);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtStr1);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtHp1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.BtnCharacterSelect2);
-            this.Controls.Add(this.BtnCharacterSelect1);
             this.Controls.Add(this.LblCharacter2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "RPGGameCharacterCreator";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -252,22 +274,24 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label LblCharacter2;
-        private System.Windows.Forms.Button BtnCharacterSelect1;
-        private System.Windows.Forms.Button BtnCharacterSelect2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtHp1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtStr1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtHp2;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtStr2;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtDef1;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtDef2;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button BtnFight;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lblName1;
+        private System.Windows.Forms.Label lblName2;
+        private System.Windows.Forms.ComboBox cboCharacterSelect1;
+        private System.Windows.Forms.ComboBox cboCharacterSelect2;
     }
 }
 

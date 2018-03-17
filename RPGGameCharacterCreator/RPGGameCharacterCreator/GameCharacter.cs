@@ -24,5 +24,10 @@ namespace RPGGameCharacterCreator
         public int VIT { get; set; }
         public int STR { get; set; }
         public int DEF { get; set; }
+
+        public override string ToString()
+        {
+            return Name;
+        }
     }
 }

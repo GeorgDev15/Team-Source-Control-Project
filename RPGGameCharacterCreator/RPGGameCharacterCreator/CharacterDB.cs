@@ -17,5 +17,13 @@ namespace RPGGameCharacterCreator
 
             db.SaveChanges();
         }
+
+        internal static List<GameCharacter> getAllCharacters()
+        {
+            // get's all characters from DB.
+            CharacterCreatorDB db = new CharacterCreatorDB();
+
+            return db.GameCharacters.OrderBy(c => c.Name).ToList();
+        }
     }
 }

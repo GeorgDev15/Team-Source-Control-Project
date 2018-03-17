@@ -52,3 +52,4 @@ G:\CPW 212 Advanced .NET Programming\Final Project\Team-Source-Control-Project\R
 G:\CPW 212 Advanced .NET Programming\Final Project\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.exe
 G:\CPW 212 Advanced .NET Programming\Final Project\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.pdb
 G:\CPW 212 Advanced .NET Programming\Final Project\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.Migrations.AddedCharacterID.resources
+G:\CPW 212 Advanced .NET Programming\Final Project\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.CharacterPicker.resources
