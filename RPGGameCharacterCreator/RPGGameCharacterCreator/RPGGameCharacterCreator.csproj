@@ -62,6 +62,12 @@
     <Compile Include="CharacterSelect.Designer.cs">
       <DependentUpon>CharacterSelect.cs</DependentUpon>
     </Compile>
+    <Compile Include="CharacterSelector_FromForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharacterSelector_FromForm1.Designer.cs">
+      <DependentUpon>CharacterSelector_FromForm1.cs</DependentUpon>
+    </Compile>
     <Compile Include="FightResult.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CharacterSelect.resx">
       <DependentUpon>CharacterSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharacterSelector_FromForm1.resx">
+      <DependentUpon>CharacterSelector_FromForm1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FightResult.resx">
       <DependentUpon>FightResult.cs</DependentUpon>

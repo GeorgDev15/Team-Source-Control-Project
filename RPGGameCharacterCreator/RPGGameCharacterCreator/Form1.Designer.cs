@@ -94,6 +94,7 @@
             this.BtnCharacterSelect2.TabIndex = 4;
             this.BtnCharacterSelect2.Text = "Character Select";
             this.BtnCharacterSelect2.UseVisualStyleBackColor = true;
+            this.BtnCharacterSelect2.Click += new System.EventHandler(this.BtnCharacterSelect2_Click);
             // 
             // textBox2
             // 
@@ -205,6 +206,7 @@
             this.BtnFight.TabIndex = 21;
             this.BtnFight.Text = "Fight!";
             this.BtnFight.UseVisualStyleBackColor = true;
+            this.BtnFight.Click += new System.EventHandler(this.BtnFight_Click);
             // 
             // button1
             // 

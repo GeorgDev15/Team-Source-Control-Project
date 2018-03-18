@@ -24,7 +24,17 @@ namespace RPGGameCharacterCreator
 
         private void BtnCharacterSelect1_Click(object sender, EventArgs e)
         {
+            new CharacterSelector_FromForm1().ShowDialog();
+        }
 
+        private void BtnFight_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnCharacterSelect2_Click(object sender, EventArgs e)
+        {
+            new CharacterSelector_FromForm1().ShowDialog();
         }
     }
 }
