@@ -75,5 +75,13 @@ namespace RPGGameCharacterCreator
             txtHp2.Text = character2.VIT.ToString();
             txtStr2.Text = character2.STR.ToString();
         }
+
+        private void BtnFight_Click(object sender, EventArgs e)
+        {
+            Damage dmg = new Damage();
+
+            // players do damage to eachother
+            
+        }
     }
 }

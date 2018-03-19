@@ -53,3 +53,22 @@ G:\CPW 212 Advanced .NET Programming\Final Project\Team-Source-Control-Project\R
 G:\CPW 212 Advanced .NET Programming\Final Project\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.pdb
 G:\CPW 212 Advanced .NET Programming\Final Project\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.Migrations.AddedCharacterID.resources
 G:\CPW 212 Advanced .NET Programming\Final Project\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.CharacterPicker.resources
+C:\Users\Micah\source\repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\bin\Debug\RPGGameCharacterCreator.exe.config
+C:\Users\Micah\source\repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\bin\Debug\RPGGameCharacterCreator.exe
+C:\Users\Micah\source\repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\bin\Debug\RPGGameCharacterCreator.pdb
+C:\Users\Micah\source\repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\bin\Debug\EntityFramework.dll
+C:\Users\Micah\source\repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Micah\source\repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\bin\Debug\EntityFramework.xml
+C:\Users\Micah\source\repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Micah\source\repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.csprojResolveAssemblyReference.cache
+C:\Users\Micah\source\repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.CharacterPicker.resources
+C:\Users\Micah\source\repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.CreateCharacter.resources
+C:\Users\Micah\source\repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.FightResult.resources
+C:\Users\Micah\source\repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.Form1.resources
+C:\Users\Micah\source\repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.Migrations.AddedCharacterID.resources
+C:\Users\Micah\source\repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.Properties.Resources.resources
+C:\Users\Micah\source\repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.csproj.GenerateResource.cache
+C:\Users\Micah\source\repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.csproj.CoreCompileInputs.cache
+C:\Users\Micah\source\repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.csproj.CopyComplete
+C:\Users\Micah\source\repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.exe
+C:\Users\Micah\source\repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.pdb

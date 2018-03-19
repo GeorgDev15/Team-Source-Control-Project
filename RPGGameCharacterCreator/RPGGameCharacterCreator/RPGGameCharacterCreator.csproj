@@ -68,6 +68,7 @@
     <Compile Include="CharacterSelect.Designer.cs">
       <DependentUpon>CharacterSelect.cs</DependentUpon>
     </Compile>
+    <Compile Include="Damage.cs" />
     <Compile Include="FightResult.cs">
       <SubType>Form</SubType>
     </Compile>
