@@ -8,7 +8,7 @@ namespace RPGGameCharacterCreator
 {
     class Damage
     {
-        public int Attack()
+        public int Attacker1()
         {
             GameCharacter character = new GameCharacter();
             Random rand = new Random();
@@ -20,7 +20,31 @@ namespace RPGGameCharacterCreator
             return atk;
         }
 
-        public int Defense()
+        public int Defender1()
+        {
+            GameCharacter character = new GameCharacter();
+            Random rand = new Random();
+
+            int def = character.DEF;
+            int defAfterRand = rand.Next(0, 4);
+
+            def += defAfterRand;
+            return def;
+        }
+
+        public int Attacker2()
+        {
+            GameCharacter character = new GameCharacter();
+            Random rand = new Random();
+
+            int atk = character.STR;
+            int atkAfterRand = rand.Next(0, 6);
+
+            atk += atkAfterRand;
+            return atk;
+        }
+
+        public int Defender2()
         {
             GameCharacter character = new GameCharacter();
             Random rand = new Random();
@@ -39,6 +63,10 @@ namespace RPGGameCharacterCreator
             int hp = character.VIT;
 
             return hp;
+        }
+        public override string ToString()
+        {
+            return base.ToString();
         }
     }
 }

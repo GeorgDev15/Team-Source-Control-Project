@@ -78,10 +78,35 @@ namespace RPGGameCharacterCreator
 
         private void BtnFight_Click(object sender, EventArgs e)
         {
+           
             Damage dmg = new Damage();
 
-            // players do damage to eachother
+            // players do "damage" to eachother
+            int damage = Convert.ToInt32(dmg.Attacker1());
+            int defense = Convert.ToInt32(dmg.Defender1());
+
+            int attack = Convert.ToInt32(dmg.Attacker2());
+            int block = Convert.ToInt32(dmg.Defender2());
+
+
+            int start1 = Convert.ToInt32(txtHp1.Text);
+            int start2 = Convert.ToInt32(txtHp2.Text);
+
+            int currHP = start1 - damage + defense;
+            int currentHP = start2 - attack + block;
+
+            txtHp1.Text = Convert.ToString(currHP);
+            txtHp2.Text = Convert.ToString(currentHP);
             
+            if(Convert.ToInt32(currHP) < 0)
+            {
+                MessageBox.Show("Figher 1 wins!");
+            }
+            if(Convert.ToInt32(currentHP) < 0)
+            {
+                MessageBox.Show("Fighter 2 wins!");
+            }
+            // this is just a test, it works as it should but it needs to clear the board after someone loses
         }
     }
 }
