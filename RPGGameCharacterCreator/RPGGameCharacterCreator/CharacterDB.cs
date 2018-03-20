@@ -18,7 +18,7 @@ namespace RPGGameCharacterCreator
             db.SaveChanges();
         }
 
-        internal static List<GameCharacter> getAllCharacters()
+        public static List<GameCharacter> getAllCharacters()
         {
             // get's all characters from DB.
             CharacterCreatorDB db = new CharacterCreatorDB();

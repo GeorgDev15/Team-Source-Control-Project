@@ -24,8 +24,8 @@ namespace RPGGameCharacterCreator
 
         private void BtnCharacterSelect1_Click(object sender, EventArgs e)
         {
-            CharacterPicker characterPicker = new CharacterPicker();
-            characterPicker.ShowDialog();
+            //CharacterPicker characterPicker = new CharacterPicker();
+            //characterPicker.ShowDialog();
         }
 
         private void PopulateCharacterComboBox()
@@ -58,7 +58,6 @@ namespace RPGGameCharacterCreator
             txtDef1.Text = character.DEF.ToString();
             txtHp1.Text = character.VIT.ToString();
             txtStr1.Text = character.STR.ToString();
-            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -74,6 +73,20 @@ namespace RPGGameCharacterCreator
             txtDef2.Text = character2.DEF.ToString();
             txtHp2.Text = character2.VIT.ToString();
             txtStr2.Text = character2.STR.ToString();
+        }
+
+        private void BtnFight_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void cboCharacterSelect1_Click(object sender, EventArgs e)
+        {
+            PopulateCharacterComboBox();
+        }
+
+        private void cboCharacterSelect2_Click(object sender, EventArgs e)
+        {
+            PopulateCharacterComboBox();
         }
     }
 }

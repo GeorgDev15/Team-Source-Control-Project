@@ -27,7 +27,8 @@ namespace RPGGameCharacterCreator
         private void BtnCreate_Click(object sender, EventArgs e)
         {
             GameCharacter G = new GameCharacter();
-            if (!string.IsNullOrWhiteSpace(txtCharacterName.Text))
+            if (!string.IsNullOrWhiteSpace(txtCharacterName.Text) && !string.IsNullOrWhiteSpace(TxtDefense.Text)
+                && !string.IsNullOrWhiteSpace(TxtStrength.Text) && !string.IsNullOrWhiteSpace(TxtVitality.Text))
             {
                 G.Name = txtCharacterName.Text;
                 G.DEF = Convert.ToInt32(TxtDefense.Text);
@@ -35,12 +36,12 @@ namespace RPGGameCharacterCreator
                 G.VIT = Convert.ToInt32(TxtVitality.Text);
                 // since XP is an int it defaults to zero
                 CharacterDB.AddCharacter(G);
+                this.Close();
             }
             else
             {
-                MessageBox.Show("Name cannot be empty!");
+                MessageBox.Show("Character Name, Vitality, Strength, and Defense cannot be empy!");
             }
-            this.Close();
         }
 
         /// <summary>
@@ -204,6 +205,11 @@ namespace RPGGameCharacterCreator
             {
                 MessageBox.Show("There needs to be a value in here.");
             }
+        }
+
+        private void CreateCharacter_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -188,6 +188,7 @@
             this.BtnFight.TabIndex = 21;
             this.BtnFight.Text = "Fight!";
             this.BtnFight.UseVisualStyleBackColor = true;
+            this.BtnFight.Click += new System.EventHandler(this.BtnFight_Click);
             // 
             // button1
             // 
@@ -224,6 +225,7 @@
             this.cboCharacterSelect1.TabIndex = 25;
             this.cboCharacterSelect1.Text = "Select A Character";
             this.cboCharacterSelect1.SelectedIndexChanged += new System.EventHandler(this.cboCharacterSelect1_SelectedIndexChanged);
+            this.cboCharacterSelect1.Click += new System.EventHandler(this.cboCharacterSelect1_Click);
             // 
             // cboCharacterSelect2
             // 
@@ -234,6 +236,7 @@
             this.cboCharacterSelect2.TabIndex = 26;
             this.cboCharacterSelect2.Text = "Select A Character";
             this.cboCharacterSelect2.SelectedIndexChanged += new System.EventHandler(this.cboCharacterSelect2_SelectedIndexChanged);
+            this.cboCharacterSelect2.Click += new System.EventHandler(this.cboCharacterSelect2_Click);
             // 
             // Form1
             // 
