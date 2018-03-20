@@ -100,14 +100,14 @@ namespace RPGGameCharacterCreator
                 txtHp1.Text = Convert.ToString(currHP);
                 txtHp2.Text = Convert.ToString(currentHP);
 
-                if (Convert.ToInt32(currHP) < 0)
+                if (Convert.ToInt32(currentHP) < 1)
                 {
                     MessageBox.Show("Figher 1 wins! Gained 100XP");
                     int xpEarned = 100;
                     character.XP = xpEarned;
                     ClearField();
                 }
-                if (Convert.ToInt32(currentHP) < 0)
+                if (Convert.ToInt32(currHP) < 1)
                 {
                     MessageBox.Show("Fighter 2 wins! Gained 100XP");
                     int xpEarned = 100;
