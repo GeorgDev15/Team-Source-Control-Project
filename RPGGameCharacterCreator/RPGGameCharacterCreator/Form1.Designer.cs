@@ -188,6 +188,7 @@
             this.BtnFight.TabIndex = 21;
             this.BtnFight.Text = "Fight!";
             this.BtnFight.UseVisualStyleBackColor = true;
+            this.BtnFight.Click += new System.EventHandler(this.BtnFight_Click);
             // 
             // button1
             // 
