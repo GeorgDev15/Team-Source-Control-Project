@@ -71,3 +71,10 @@ C:\Users\Micah\source\repos\Team-Source-Control-Project\RPGGameCharacterCreator\
 C:\Users\Micah\source\repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.csproj.CopyComplete
 C:\Users\Micah\source\repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.exe
 C:\Users\Micah\source\repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.pdb
+C:\Users\Eli\Source\Repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\bin\Debug\EntityFramework.dll
+C:\Users\Eli\Source\Repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Eli\Source\Repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\bin\Debug\EntityFramework.xml
+C:\Users\Eli\Source\Repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Eli\Source\Repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.CharacterPicker.resources
+C:\Users\Eli\Source\Repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.Migrations.AddedCharacterID.resources
+C:\Users\Eli\Source\Repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.csproj.CopyComplete

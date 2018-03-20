@@ -225,6 +225,7 @@
             this.cboCharacterSelect1.TabIndex = 25;
             this.cboCharacterSelect1.Text = "Select A Character";
             this.cboCharacterSelect1.SelectedIndexChanged += new System.EventHandler(this.cboCharacterSelect1_SelectedIndexChanged);
+            this.cboCharacterSelect1.Click += new System.EventHandler(this.cboSelectCharacters_Click);
             // 
             // cboCharacterSelect2
             // 

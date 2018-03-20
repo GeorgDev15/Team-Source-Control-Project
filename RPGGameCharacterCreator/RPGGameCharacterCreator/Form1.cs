@@ -135,5 +135,10 @@ namespace RPGGameCharacterCreator
             lblName1.Text = "";
             lblName2.Text = "";
         }
+
+        private void cboSelectCharacters_Click(object sender, EventArgs e)
+        {
+            PopulateCharacterComboBox();
+        }
     }
 }
