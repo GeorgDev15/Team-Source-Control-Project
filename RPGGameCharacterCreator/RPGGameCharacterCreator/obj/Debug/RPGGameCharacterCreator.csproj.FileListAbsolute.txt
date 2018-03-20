@@ -71,4 +71,3 @@ C:\Users\Micah\source\repos\Team-Source-Control-Project\RPGGameCharacterCreator\
 C:\Users\Micah\source\repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.csproj.CopyComplete
 C:\Users\Micah\source\repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.exe
 C:\Users\Micah\source\repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.pdb
-C:\Users\Micah\source\repos\Team-Source-Control-Project\RPGGameCharacterCreator\RPGGameCharacterCreator\obj\Debug\RPGGameCharacterCreator.csprojResolveAssemblyReference.cache
